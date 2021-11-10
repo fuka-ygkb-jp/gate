@@ -1,0 +1,11 @@
+.GateCopyright {
+	text-align: right;
+}
+
+.GateCopyright a {
+	text-decoration: none;
+}
+
+.GateCopyright a:hover {
+	text-decoration: underline;
+}

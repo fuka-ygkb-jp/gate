@@ -1,295 +1,412 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0//EN">
-<HTML>
-<HEAD>
-<META name="GENERATOR" content="IBM HomePage Builder 2000 V4.0.5  for Windows">
-<META http-equiv="Content-Type" content="text/html; charset=Shift_JIS">
-<TITLE>最後の良心 / 取扱説明書</TITLE>
-</HEAD>
-<BODY bgcolor="#ffffff" text="#7e2828" link="#7726c8" alink="5c4fff" vlink="ff5959">
+<html lang="ja-JP">
+<head>
+	<meta http-equiv='Content-Type' content='text/html; charset=Shift_JIS'>
+	<meta http-equiv='Content-Style-Type' content='text/css'>
+	<meta name='ROBOTS' content='NOINDEX,NOFOLLOW'>
+	<meta name='copyright' content='&copy; 1999-2003 Yugen-Koubou'>
+	<title>最後の良心　取扱説明書</title>
+	<style type='text/css'>
+		/* 文章に共通 */
+		BODY {
+			background-color : white;
+			color : #230046;
+			font-family : Tahoma;
+			padding-left : 2em;
+			padding-right : 2em;
+		}
+		A {
+			text-decoration: none;
+			color: #230046;
+		}
+		A:hover {
+			color: red;
+		}
+		H1 {
+			text-align: center;
+		}
+		H2 {
+			border-left: 16px solid;
+			border-bottom: 2px solid;
+			margin-top : 2em;
+			padding: 16px 24px 16px 24px;
+		}
+		H3 {
+			border-left: 8px solid;
+			border-bottom: 1px solid;
+			margin-top : 2em;
+			padding: 12px 12px 12px 12px;
+		}
+		P {
+			margin-left : 1em;
+			line-height : 130%;
+		}
+		LI {
+			margin-left: 2em;
+			margin-bottom : 1ex;
+			line-height : 130%;
+		}
+		EM {
+			font-weight : bold;
+			vertical-align : baseline;
+			color : #c60000;
+		}
+		CODE {
+			font-family : Courier;
+		}
+		SAMP {
+			font-family : Courier;
+		}
+		.Article {
+			margin-left : 1em;
+		}
 
-<FONT size="+3"><B>最後の良心</B></FONT>
+		/* コンテキスト依存 */
+		.Box {
+			border-width : 1px 3px 3px 1px;
+			border-color: #230046;
+			border-style : solid;
+		}
+		.Box .Caption {
+			text-decoration: underline;
+			font-weight: bold;
+		}
 
-<HR>
+		.Table TABLE {
+			margin: 1em;
+			border-width : 1px 3px 3px 1px;
+			border-color: #230046;
+			border-style : solid;
+			border-collapse: collapse;
+		}
+		.Table TH {
+			background-color : #230046;
+			color : white;
+			border-width : 1px;
+			border-color: #230046;
+			border-style : solid;
+		}
+		.Table TD {
+			border-width : 1px;
+			border-color: #230046;
+			border-style : solid;
+		}
+		.Example {
+			margin-left: 4em;
+		}
 
-<DIV align="right">取扱説明書</DIV>
+		/* 汎用 */
+		.posLeft {
+			text-align: left;
+		}
+		.posRight {
+			text-align: right;
+		}
+		.posCenter {
+			text-align: center;
+		}
+		.blockCenter {
+			margin-left: auto;
+			margin-right: auto;
+		}
+	</style>
+</head>
+<body>
+<h1>最後の良心　取扱説明書</h1>
+<hr>
 
-<BR>
+<h2>目次</h2>
+<UL>
+	<LI><A name="TOC2" href="#SEC2">概要</A>
+	<LI><A name="TOC3" href="#SEC3">動作環境</A>
+	<LI><A name="TOC4" href="#SEC4">導入のあらまし</A>
+	<LI><A name="TOC5" href="#SEC5">設定項目の詳細</A>
+	<UL>
+		<LI><A name="TOC6" href="#SEC6">必須項目</A>
+		<LI><A name="TOC7" href="#SEC7">警告画面の表示設定</A>
+	</UL>
+    
+	<LI><A name="TOC8" href="#SEC8">宣言</A>
+	<LI><A name="TOC9" href="#SEC9">お願い</A>
+</UL>
 
-<CENTER>
-<TABLE width="95%" cellpadding="4" cellspacing="4">
-  <TBODY>
-    <TR>
-      <TD bgcolor="#ffc6c7">
-      <P><B><FONT size="+1">■もくじ</FONT></B></P>
-      </TD>
-    </TR>
-    <TR>
-      <TD bgcolor="#ffdfe0">
-      <CENTER>
-      <TABLE border="0" cellpadding="0" cellspacing="0">
-        <TBODY>
-          <TR>
-            <TD>
-            <UL>
-              <LI><A href="#gaiyou"><FONT size="+1">概要</FONT></A>
-              <LI><A href="#dousagaiyou"><FONT size="+1">動作概要</FONT></A>
-              <LI><FONT size="+1"><A href="#dounyuu">導入</A></FONT>
-              <LI><A href="#settei"><FONT size="+1">設定項目の詳細</FONT></A>
-              <LI><A href="#sengen"><FONT size="+1">宣言</FONT></A>
-              <LI><A href="#onegai"><FONT size="+1">お願い</FONT></A>
-            </UL>
-            </TD>
-          </TR>
-        </TBODY>
-      </TABLE>
-      </CENTER>
-      </TD>
-    </TR>
-  </TBODY>
-</TABLE>
-</CENTER>
-<BR>
 
-<CENTER>
-<TABLE width="95%" cellpadding="4" cellspacing="4">
-  <TBODY>
-    <TR>
-      <TD bgcolor="#ffc6c7">
-      <P><B><FONT size="+1"><A name="gaiyou">■概要</A></FONT></B></P>
-      </TD>
-    </TR>
-    <TR>
-      <TD bgcolor="#ffdfe0">おみくじやViewに続く、イロモノシリーズ第３弾。<BR>
-      ページの門番です。　招かれざる客、見るべきでない客を追い返します。<BR>
-      <B>もちろん、自前でユーザ認証の指示が行えるプロバイダの方には無用の物です。<BR>
-      </B><BR>
-      例えば18禁サイトの成人向け画像が置かれたギャラリーの場合、未成年がそのような画像を見ることは喜ぶべき事ではありません。(建前)<BR>
-      そのような場合、「ed.jp」 ドメインのアクセスをこのプログラムで禁止すれば、小中高の学校からのアクセスを未然に防ぐことが出来ます。　(学校の先生、ごめんなさい)<BR>
-      <BR>
-      また、掲示板などに飛ぶ前にこのプログラムを間にかますと嫌な客を追い返すことが出来ます。<BR>
-      (嫌な客のブラックリストはあなたが逐一強化していって下さい^^;)<BR>
-      <BR>
-      ただし、proxyのチェックは全く行っていませんので、荒らしがどんどんproxyを変更してきた場合には意味を持ちませんが…。　(せいぜい、威嚇にはなるでしょう)<BR>
-      <BR>
-      そんな訳で、主な使用用途は前者になってくると思います。<BR>
-      つまんないプログラムではありますが、使い道によっては人を驚かせたり、イタズラに使ったりなど、お遊びにも使えるでしょう。<BR>
-      <BR>
-      その他用途
-      <UL>
-        <LI>良く来るお客さんのホスト名を指定しておき、特別な画面を見せてあげる<BR>
-        (逆転の発想、警告画面の別な使い方ですね！)
-        <LI>会員ページなどへの簡易チェック
-        <LI>外人にNewsGroupやWebに画像などを無断転載されて困る場合の外人除け
-      </UL><BR>
-      割と適当に作ったので(実践導入してません)、割とちゃんと動いてくれないかも知れません。<BR>
-      その時はごめんなさい。</TD>
-    </TR>
-  </TBODY>
-</TABLE>
-</CENTER>
+<h2><A href="#TOC2" name="SEC2">概要</A></h2>
 
-<BR>
+	<p>ページ訪問者のIPアドレス、もしくはホスト名を調べ、リストに載っている訪問者を拒絶します。</p>
+	<p>具体的な利用用途としては以下のものを想定しています：</p>
+	<ul>
+		<li>未成年等にとって好ましくないコンテンツを公開する場合、教育機関からのアクセスを禁じたいとき。
+		<li>IPチェック機能を持たない掲示板の手前で本CGIを置き、荒らしを撃退する。
+		<li>会員ページなどへの簡単なチェック。
+		<li>一部の訪問者に対して特別なページを見せてあげたいとき。
+		<li>CG系サイト等において、外人にNewsGroupやWebにコンテンツを無断転載されて困る場合の外人除け。
+	</ul>
+	<p>実際の動作については以下の通りです。</p>
+	<table summary='動作概要図' class='Example'>
+	<tbody>
+		<tr class='posCenter'>
+			<td class='Box'>
+				<span class='Caption'>呼び出し元ページ</span><br>
+				（gate.cgiへのリンクを張る）
+			</td>
+			<td>→</td>
+			<td class='Box'>
+				<span class='Caption'>最後の良心(gate.cgi)</span><br>
+				（訪問者の情報をログに記録する）<br>
+				（通過可能な訪問者かチェックを行う）
+			</td>
+			<td>
+				→<br>
+				通過可能であれば
+			</td>
+			<td class='Box'>
+				<span class='Caption'>通常のページ</span>
+			</td>
+		</tr>
+		<tr class='posCenter'>
+			<td></td>
+			<td></td>
+			<td>
+				↓<br>
+				招かれざる客であれば
+			</td>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr class='posCenter'>
+			<td></td>
+			<td></td>
+			<td class='Box'>
+				<span class='Caption'>警告画面</span>
+			</td>
+			<td></td>
+			<td></td>
+		</tr>
+	</tbody>
+	</table>
 
-<CENTER>
-<TABLE width="95%" cellpadding="4" cellspacing="4">
-  <TBODY>
-    <TR>
-      <TD bgcolor="#ffc6c7">
-      <P><A name="dousagaiyou"><B><FONT size="+1">■動作概要</FONT></B></A></P>
-      </TD>
-    </TR>
-    <TR>
-      <TD bgcolor="#ffdfe0">あるHTMLから、このページへ&lt;A HREF=&quot;～&quot;&gt;タグでリンクを張ります。<BR>
-      そこをクリックしたお客さんのリモートホストを調べ、ブラックリストに載っていれば警告を表示、載っていなければ本来表示されるはずのページへ移動させます。<BR>
-      <BR>
-      <CENTER>
-      <TABLE border="0" cellpadding="10" cellspacing="0">
-        <TBODY>
-          <TR>
-            <TD align="center" bgcolor="#dfe0ff"><B><U>呼び出し元ページ</U></B><BR>
-            <BR>
-            (18歳以下入場禁止の警告など)<BR>
-            「入場」などを押した！</TD>
-            <TD>→</TD>
-            <TD bgcolor="#dfe0ff" align="center"><B><U>最後の良心</U></B><BR>
-            <BR>
-            ヽ(*´o｀*)(´-｀)ノ<BR>
-            らーぃ</TD>
-            <TD align="center"><B>OK!</B><BR>
-            →</TD>
-            <TD align="center" bgcolor="#dfe0ff"><B><U>お宝画像</U></B><BR>
-            <BR>
-            イッヒー！</TD>
-          </TR>
-          <TR>
-            <TD></TD>
-            <TD></TD>
-            <TD align="center"><B>NG!</B><BR>
-            ↓</TD>
-            <TD></TD>
-            <TD></TD>
-          </TR>
-          <TR>
-            <TD></TD>
-            <TD></TD>
-            <TD align="center" bgcolor="#dfe0ff"><B><U>警告画面</U></B><BR>
-            <BR>
-            (通称・嘘付いたな画面)<BR>
-            ヽ(゜□゜)(゜□゜)ノ<BR>
-            カエレカエレ！</TD>
-            <TD></TD>
-            <TD></TD>
-          </TR>
-        </TBODY>
-      </TABLE>
-      </CENTER>
-      </TD>
-    </TR>
-  </TBODY>
-</TABLE>
-</CENTER>
 
-<BR>
+<h2><A href="#TOC3" name="SEC3">動作環境</A></h2>
 
-<CENTER>
-<TABLE width="95%" cellpadding="4" cellspacing="4">
-  <TBODY>
-    <TR>
-      <TD bgcolor="#ffc6c7">
-      <P><B><FONT size="+1"><A name="dounyuu">■導入</A></FONT></B></P>
-      </TD>
-    </TR>
-    <TR>
-      <TD bgcolor="#ffdfe0">いやはや簡単。<OL>
-        <LI>一行目のperlへのパスをあなたの入会しているプロバイダに合わせて変更して下さい。
-        <LI>設定項目を埋めて下さい。
-        <LI>任意のディレクトリへアップロードして下さい。
-        <LI>gate.cgi のパーミッションを705にして下さい。
-      </OL>
-      </TD>
-    </TR>
-  </TBODY>
-</TABLE>
-</CENTER>
+	<p>
+		PerlとApacheをインストールしたWebサーバ。<br>
+		CGIを利用可能なプロバイダであることをご確認下さい。
+	</p>
+	<p>
+		コーディングと簡易な動作テストには Win2000 + IIS5.0 + perlis.dll。<br>
+		総合テストには Linux + Apache + Perl5を使用しました。(www.skipup.com)
+	</p>
 
-<BR>
 
-<CENTER>
-<TABLE width="95%" cellpadding="4" cellspacing="4">
-  <TBODY>
-    <TR>
-      <TD bgcolor="#ffc6c7">
-      <P><A name="settei"><B><FONT size="+1">■設定項目の詳細</FONT></B></A></P>
-      </TD>
-    </TR>
-    <TR>
-      <TD bgcolor="#ffdfe0">ほとんどの指定は一目見れば分かると思いますので省略します。<BR>
-      一番手こずりそうなブラックリストの作成方法についてのみ説明します。。<BR>
-      ご覧の通り、ブラックリストは別ファイルではなく、プログラムの中で少々面倒なやり方で記述しなければなりません。<BR>
-      <BR>
-      作者がオブジェクト指向の勉強をしているため、情報のカプセル化の実験になっています(嘘<SUP>TM</SUP>)<BR>
-      まあ、それはウソですが、こうしておけばブラックリストを他人に覗かれることはないという利点はあります。<BR>
-      では、ブラックリスト部分を覗いてみましょう。
-      <CENTER>
-      <TABLE border="1" cellpadding="2" cellspacing="0">
-        <TBODY>
-          <TR>
-            <TD><B><FONT size="+2">@denyhost = (</FONT><BR>
-            <FONT size="+2">
-            '.ed.jp',</FONT><BR>
-            <FONT size="+2">
-            '.go.jp',</FONT><BR>
-            <FONT size="+2">
-            '.edu',</FONT><BR>
-            <FONT size="+2">
-            );</FONT></B></TD>
-          </TR>
-        </TBODY>
-      </TABLE>
-      </CENTER>
-      この様になっていますよね。<BR>
-      この例では　ed.jp(教育機関)、go.jp(政府機関)、.edu(米国教育機関)　を禁止しています。<BR>
-      ドメイン名を　'　で囲み、　,　(コロン)で区切ります。<BR>
-      例えば3Webからのアクセスを禁止したい場合、　'.3web.ne.jp',　を１行追加します。<BR>
-      <BR>
-      <B><U><FONT size="+1">
-      その他表記例</FONT></U></B><BR>
-      <CENTER>
-      <TABLE border="1" cellpadding="2" cellspacing="0">
-        <TBODY>
-          <TR>
-            <TD>'namco',</TD>
-            <TD>ドメイン名に namco を含む来訪者のアクセスを全て禁止します。<BR>
-            大体、namco.co.jp(ナムコ株式会社)くらいしかないとは思いますけど(笑)</TD>
-          </TR>
-          <TR>
-            <TD>'proxy',</TD>
-            <TD><B>proxy</B>.xxx.com<BR>
-            www.<B>proxy</B>.ne.jp<BR>
-            など、ドメイン名に proxy を含むアドレスを禁止します。</TD>
-          </TR>
-        </TBODY>
-      </TABLE>
-      </CENTER><BR>
-      その他、IPアドレスでも指定できますが、判定が完璧ではないので４桁全て使わないと確実ではありません。<BR>
-      例えば、 205.188 と指定すればそのドメイン全てをシャットアウトできますが、176.<B>205.188</B>.2 等の全く関係ない方でも禁止されちゃったりします。<BR>
-      また、この場合、ホスト名をDNSで引けないホスト、つまりIPアドレスモロだしでアクセスしてくる人(ほとんどは匿名proxy)にしか効果がありません。</TD>
-    </TR>
-  </TBODY>
-</TABLE>
-</CENTER>
+<h2><A href="#TOC4" name="SEC4">導入のあらまし</A></h2>
+	<ol>
+		<li>１行目のperlのパスを、あなたの入会しているプロバイダに合わせて変更して下さい。
+		<li>設定項目を各自のニーズに合わせて修正して下さい。
+		<li>任意のディレクトリにアスキーモードでアップロードして下さい。
+		<li>gate.cgiのパーミッションを705にして下さい。
+		<li>gate.cgiへ a タグでリンクを張って下さい。
+		<li>空のログファイルを準備して下さい。
+		<li>準備したリンクをクリックし、動作を確認して下さい。
+	</ol>
 
-<BR>
 
-<CENTER>
-<TABLE width="95%" cellpadding="4" cellspacing="4">
-  <TBODY>
-    <TR>
-      <TD bgcolor="#ffc6c7">
-      <P><A name="sengen"><B><FONT size="+1">■宣言</FONT></B></A></P>
-      </TD>
-    </TR>
-    <TR>
-      <TD bgcolor="#ffdfe0">このプログラムはフリーソフトです。<BR>
-      自由に改造して使用して下さい。 配布も自由です。
-      改造したものを再配布する事も制限しません。<BR>
-      <BR>
-      但し、このプログラムの使用・頒布に関して必要以上の金銭授受を伴う場合はそれを禁止します。<BR>
-      (ホームページ制作代行業の方などはご注意下さい。)<BR>
-      <BR>
-      著作権は放棄しません。 プログラム中のコピーライト表記を削除したり、改変しないで下さい。<BR>
-      が、あなたがこのプログラムに大幅な改造を施した場合はその限りではありません。<BR>
-      その辺は常識的なさじ加減ということで…(^_^；<BR>
-      <BR>
-      このプログラムを用いた事による一切の損害について、作者及びサーバ責任者は責任を負わないものとします。<BR>
-      あなたの責任の範囲において使用して下さい。
-      
-      </TD>
-    </TR>
-  </TBODY>
-</TABLE>
-</CENTER>
+<h2><A href="#TOC5" name="SEC5">設定項目の詳細</A></h2>
+	<h3><A href="#TOC6" name="SEC6">必須項目</A></h3>
+	<h4>Perlのパス</h4>
+	<p>gate.cgiの１行目にある、「Perlのパス」ををお使いのプロバイダに合わせて書き換えます。</p>
+	<p>
+		もし、プロバイダに指定されたPerlのパスが /usr/bin/perl でしたら、
+		<code>#!/usr/bin/perl</code>
+		と書き換えて下さい。　頭の#!は消してはいけません。
+	</p>
 
-<BR>
+	<h4>ブラックリスト</h4>
+	<p>
+		設定の上で最も重要となる箇所です。<br>
+		招かれざる客のIPアドレス、若しくはホスト名をこの欄に記述します。
+	</p>
+	<p>書式は以下の通りです：</p>
 
-<CENTER>
-<TABLE width="95%" cellpadding="4" cellspacing="4">
-  <TBODY>
-    <TR>
-      <TD bgcolor="#ffc6c7">
-      <P><B><FONT size="+1"><A name="onegai">■お願い</A></FONT></B></P>
-      </TD>
-    </TR>
-    <TR>
-      <TD bgcolor="#ffdfe0">このプログラムを使って下さった方は、極力「有限工房」へリンクを張っていただきたく思います。<BR>
-      普及のためにご協力下さい。　もちろん、強制ではありません。</TD>
-    </TR>
-  </TBODY>
-</TABLE>
-</CENTER>
-<HR>
-<DIV align="right">&copy;1999-2000 不可思議絵の具<BR>
-(<A href="http://www.skipup.com/~fuka/">http://www.skipup.com/~fuka/</A>)</DIV>
-</BODY>
-</HTML>
+<pre class='Example'><code>
+@uDenyHost = (
+    '<var>拒絶したいIPアドレス若しくはホスト名</var>',
+    （以下、繰り返し）
+);
+</code></pre>
 
+	<p>リストは複数追加でき、<dfn>ワイルドカード</dfn>を使用できます。</p>
+	<p>
+		ワイルドカードとは<dfn>「０文字以上の任意の文字列」を意味する "*" （アスタリスク）</dfn>と
+		<dfn>「任意の１文字」を意味する "?"（クエスチョン）</dfn>の２つの記号です。<br>
+		ただし、"."（コロン）は対象外となります。
+	</p>
+	<div class='Table Example'>
+		<table summary='ワイルドカードの使用例（基本編）'>
+		<caption>ワイルドカードの使用例（基本編）</caption>
+		<thead>
+			<tr>
+				<th>例</th>
+				<th>説明</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td><var>per?</var></td>
+				<td>
+					<em>per</em>が頭に付く４文字。<br>
+					<em>per</em>l, <em>per</em>L, <em>per</em>t, <em>per</em>6 など。
+				</td>
+			</tr>
+			<tr>
+				<td><var>a*</var></td>
+				<td>
+					<em>a</em>が頭に付く文字列（何文字でも良い）。<br>
+					<em>a</em>, <em>a</em>ct, <em>a</em>ccess など。
+				</td>
+			</tr>
+			<tr>
+				<td><var>*a</var></td>
+				<td>
+					<em>a</em>が尻に付く文字列（何文字でも良い）。<br>
+					<em>a</em>, h<em>a</em>, cinem<em>a</em> など。
+				</td>
+			</tr>
+			<tr>
+				<td><var>*a*</var></td>
+				<td>
+					<em>a</em>が含まれる文字列（何文字でも良い）。<br>
+					<em>a</em>, c<em>a</em>t, aur<em>a</em> など。
+				</td>
+			</tr>
+		</tbody>
+		</table>
+	</div>
+
+	<div class='Table Example'>
+		<table summary='ワイルドカードの使用例（実践編）'>
+		<caption>ワイルドカードの使用例（実践編）</caption>
+		<thead>
+			<tr>
+				<th>例</th>
+				<th>説明</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td><var>proxy.*</var></td>
+				<td>proxyというホストからのアクセス全て</td>
+			</tr>
+			<tr>
+				<td><var>*.provider.ne.jp</var></td>
+				<td>provider.ne.jpドメインからのアクセス全て</td>
+			</tr>
+			<tr>
+				<td><var>ppp*.provider.ne.jp</var></td>
+				<td>provider.ne.jpのアクセスポイント全て</td>
+			</tr>
+			<tr>
+				<td><var>ppp5??.provider.ne.jp</var></td>
+				<td>provider.ne.jpのアクセスポイントの500番台</td>
+			</tr>
+			<tr>
+				<td><var>*.ed.jp</var></td>
+				<td>ed.jpドメイン（教育機関）全て</td>
+			</tr>
+			<tr>
+				<td><var>192.168.0.*</var></td>
+				<td>ネットワークセグメント192.168.0全て</td>
+			</tr>
+		</tbody>
+		</table>
+	</div>
+
+	<h4>ログファイル名</h4>
+	<p>
+		「最後の良心」ではログを記録しています。<br>
+		ログファイルの具体的な名前を指定します（推奨はプログラムと同じ名前）。<br>
+		複数箇所に最後の良心を設置し、使い分ける場合に変更すると便利でしょう。<br>
+		（CGI自身のファイル名に合わせると分かりやすいと思います）
+	</p>
+	<p>	ログには以下の内容を記録していますので、設定の参考にして下さい。</p>
+	<ul>
+		<li>日時（日付・曜日・時刻）
+		<li>結果（通過を許せば“<samp>OK</samp>”、弾いた場合は“<samp>NG</samp>”）
+		<li>ホスト又はIPアドレス
+	</ul>
+	<p>
+		プログラムと同じディレクトリに指定された名前のログファイルがないとエラーになります。<br>
+		ログファイルは自動的に作成されません。自分で空のログファイルを作成し、アップロードして下さい。<br>
+		アップロードしたログは、パーミッションを<var>606(-rw----rw-)</var>又は<var>606(-rw-------)</var>にして下さい。
+	</p>
+
+
+	<h4>ログ保存件数</h4>
+	<p>
+		ログを何件分保存するかを指定ます。<br>
+		件数を超えたものは古いものから順に捨てられてゆきます。<br>
+		推奨は50件です。
+	</p>
+
+
+	<h4>チェックした後に飛ばしたいページ</h4>
+	<p>
+		チェックの結果、問題の無かった訪問者をこの項目で指定したURLへ転送します。<br>
+		指定は絶対パス、相対パス、URLのいずれでも構いません。
+	</p>
+
+
+	<h3><A href="#TOC7" name="SEC7">警告画面の表示設定</A></h3>
+	<h4>スタイルシートファイル名</h4>
+	<p>
+		警告画面にはスタイルシート(CSS)を使用できます。<br>
+		推奨は、プログラムのファイル名と同じファイル名です。
+	</p>
+
+
+	<h4>警告画面のタイトル</h4>
+	<p>記述された文字列がブラウザのタイトル画面に表示されます。</p>
+
+
+	<h4>警告画面の内容</h4>
+	<p>
+		警告画面の内容をHTMLで記述します。
+	</p>
+
+
+<h2><A href="#TOC8" name="SEC8">宣言</A></h2>
+	<p>
+		「最後の良心」はフリーソフトです。<br>
+		自由に改造して使用して下さい。 配布も自由です。<br>
+		改造したものを再配布する事も制限しません。
+	</p>
+	<p>
+		但し、このプログラムの使用・頒布に関して必要以上の金銭授受を伴う場合はそれを禁止します。<br>
+		ホームページ制作代行業の方などはご注意下さい。
+	</p>
+	<p>
+		著作権は放棄しません。<br>
+		プログラム中のコピーライト表記を削除したり、改変しないで下さい。<br>
+		が、あなたがこのプログラムに大幅な改造を施した場合はその限りではありません。<br>
+		その辺は常識的なさじ加減ということで…(^_^;<br>
+	</p>
+	<p>
+		このプログラムを用いた事による一切の損害について、作者及びサーバ責任者は責任を負わないものとします。<br>
+		あなたの責任の範囲において使用して下さい。
+	</p>
+
+
+<h2><A href="#TOC9" name="SEC9">お願い</A></h2>
+	<p>
+		このプログラムを使って下さった方は、極力「有限工房」へリンクを張っていただきたく思います。<br>
+		普及のためにご協力下さい。　もちろん、強制ではありません。
+	</p>
+
+
+<hr>
+<address class='posRight'>
+	<a href='http://yugen.main.jp/'>&copy;1999-2003 有限工房</a>
+</address>
+
+</body>
+</html>
