@@ -1,0 +1,295 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0//EN">
+<HTML>
+<HEAD>
+<META name="GENERATOR" content="IBM HomePage Builder 2000 V4.0.5  for Windows">
+<META http-equiv="Content-Type" content="text/html; charset=Shift_JIS">
+<TITLE>最後の良心 / 取扱説明書</TITLE>
+</HEAD>
+<BODY bgcolor="#ffffff" text="#7e2828" link="#7726c8" alink="5c4fff" vlink="ff5959">
+
+<FONT size="+3"><B>最後の良心</B></FONT>
+
+<HR>
+
+<DIV align="right">取扱説明書</DIV>
+
+<BR>
+
+<CENTER>
+<TABLE width="95%" cellpadding="4" cellspacing="4">
+  <TBODY>
+    <TR>
+      <TD bgcolor="#ffc6c7">
+      <P><B><FONT size="+1">■もくじ</FONT></B></P>
+      </TD>
+    </TR>
+    <TR>
+      <TD bgcolor="#ffdfe0">
+      <CENTER>
+      <TABLE border="0" cellpadding="0" cellspacing="0">
+        <TBODY>
+          <TR>
+            <TD>
+            <UL>
+              <LI><A href="#gaiyou"><FONT size="+1">概要</FONT></A>
+              <LI><A href="#dousagaiyou"><FONT size="+1">動作概要</FONT></A>
+              <LI><FONT size="+1"><A href="#dounyuu">導入</A></FONT>
+              <LI><A href="#settei"><FONT size="+1">設定項目の詳細</FONT></A>
+              <LI><A href="#sengen"><FONT size="+1">宣言</FONT></A>
+              <LI><A href="#onegai"><FONT size="+1">お願い</FONT></A>
+            </UL>
+            </TD>
+          </TR>
+        </TBODY>
+      </TABLE>
+      </CENTER>
+      </TD>
+    </TR>
+  </TBODY>
+</TABLE>
+</CENTER>
+<BR>
+
+<CENTER>
+<TABLE width="95%" cellpadding="4" cellspacing="4">
+  <TBODY>
+    <TR>
+      <TD bgcolor="#ffc6c7">
+      <P><B><FONT size="+1"><A name="gaiyou">■概要</A></FONT></B></P>
+      </TD>
+    </TR>
+    <TR>
+      <TD bgcolor="#ffdfe0">おみくじやViewに続く、イロモノシリーズ第３弾。<BR>
+      ページの門番です。　招かれざる客、見るべきでない客を追い返します。<BR>
+      <B>もちろん、自前でユーザ認証の指示が行えるプロバイダの方には無用の物です。<BR>
+      </B><BR>
+      例えば18禁サイトの成人向け画像が置かれたギャラリーの場合、未成年がそのような画像を見ることは喜ぶべき事ではありません。(建前)<BR>
+      そのような場合、「ed.jp」 ドメインのアクセスをこのプログラムで禁止すれば、小中高の学校からのアクセスを未然に防ぐことが出来ます。　(学校の先生、ごめんなさい)<BR>
+      <BR>
+      また、掲示板などに飛ぶ前にこのプログラムを間にかますと嫌な客を追い返すことが出来ます。<BR>
+      (嫌な客のブラックリストはあなたが逐一強化していって下さい^^;)<BR>
+      <BR>
+      ただし、proxyのチェックは全く行っていませんので、荒らしがどんどんproxyを変更してきた場合には意味を持ちませんが…。　(せいぜい、威嚇にはなるでしょう)<BR>
+      <BR>
+      そんな訳で、主な使用用途は前者になってくると思います。<BR>
+      つまんないプログラムではありますが、使い道によっては人を驚かせたり、イタズラに使ったりなど、お遊びにも使えるでしょう。<BR>
+      <BR>
+      その他用途
+      <UL>
+        <LI>良く来るお客さんのホスト名を指定しておき、特別な画面を見せてあげる<BR>
+        (逆転の発想、警告画面の別な使い方ですね！)
+        <LI>会員ページなどへの簡易チェック
+        <LI>外人にNewsGroupやWebに画像などを無断転載されて困る場合の外人除け
+      </UL><BR>
+      割と適当に作ったので(実践導入してません)、割とちゃんと動いてくれないかも知れません。<BR>
+      その時はごめんなさい。</TD>
+    </TR>
+  </TBODY>
+</TABLE>
+</CENTER>
+
+<BR>
+
+<CENTER>
+<TABLE width="95%" cellpadding="4" cellspacing="4">
+  <TBODY>
+    <TR>
+      <TD bgcolor="#ffc6c7">
+      <P><A name="dousagaiyou"><B><FONT size="+1">■動作概要</FONT></B></A></P>
+      </TD>
+    </TR>
+    <TR>
+      <TD bgcolor="#ffdfe0">あるHTMLから、このページへ&lt;A HREF=&quot;～&quot;&gt;タグでリンクを張ります。<BR>
+      そこをクリックしたお客さんのリモートホストを調べ、ブラックリストに載っていれば警告を表示、載っていなければ本来表示されるはずのページへ移動させます。<BR>
+      <BR>
+      <CENTER>
+      <TABLE border="0" cellpadding="10" cellspacing="0">
+        <TBODY>
+          <TR>
+            <TD align="center" bgcolor="#dfe0ff"><B><U>呼び出し元ページ</U></B><BR>
+            <BR>
+            (18歳以下入場禁止の警告など)<BR>
+            「入場」などを押した！</TD>
+            <TD>→</TD>
+            <TD bgcolor="#dfe0ff" align="center"><B><U>最後の良心</U></B><BR>
+            <BR>
+            ヽ(*´o｀*)(´-｀)ノ<BR>
+            らーぃ</TD>
+            <TD align="center"><B>OK!</B><BR>
+            →</TD>
+            <TD align="center" bgcolor="#dfe0ff"><B><U>お宝画像</U></B><BR>
+            <BR>
+            イッヒー！</TD>
+          </TR>
+          <TR>
+            <TD></TD>
+            <TD></TD>
+            <TD align="center"><B>NG!</B><BR>
+            ↓</TD>
+            <TD></TD>
+            <TD></TD>
+          </TR>
+          <TR>
+            <TD></TD>
+            <TD></TD>
+            <TD align="center" bgcolor="#dfe0ff"><B><U>警告画面</U></B><BR>
+            <BR>
+            (通称・嘘付いたな画面)<BR>
+            ヽ(゜□゜)(゜□゜)ノ<BR>
+            カエレカエレ！</TD>
+            <TD></TD>
+            <TD></TD>
+          </TR>
+        </TBODY>
+      </TABLE>
+      </CENTER>
+      </TD>
+    </TR>
+  </TBODY>
+</TABLE>
+</CENTER>
+
+<BR>
+
+<CENTER>
+<TABLE width="95%" cellpadding="4" cellspacing="4">
+  <TBODY>
+    <TR>
+      <TD bgcolor="#ffc6c7">
+      <P><B><FONT size="+1"><A name="dounyuu">■導入</A></FONT></B></P>
+      </TD>
+    </TR>
+    <TR>
+      <TD bgcolor="#ffdfe0">いやはや簡単。<OL>
+        <LI>一行目のperlへのパスをあなたの入会しているプロバイダに合わせて変更して下さい。
+        <LI>設定項目を埋めて下さい。
+        <LI>任意のディレクトリへアップロードして下さい。
+        <LI>gate.cgi のパーミッションを705にして下さい。
+      </OL>
+      </TD>
+    </TR>
+  </TBODY>
+</TABLE>
+</CENTER>
+
+<BR>
+
+<CENTER>
+<TABLE width="95%" cellpadding="4" cellspacing="4">
+  <TBODY>
+    <TR>
+      <TD bgcolor="#ffc6c7">
+      <P><A name="settei"><B><FONT size="+1">■設定項目の詳細</FONT></B></A></P>
+      </TD>
+    </TR>
+    <TR>
+      <TD bgcolor="#ffdfe0">ほとんどの指定は一目見れば分かると思いますので省略します。<BR>
+      一番手こずりそうなブラックリストの作成方法についてのみ説明します。。<BR>
+      ご覧の通り、ブラックリストは別ファイルではなく、プログラムの中で少々面倒なやり方で記述しなければなりません。<BR>
+      <BR>
+      作者がオブジェクト指向の勉強をしているため、情報のカプセル化の実験になっています(嘘<SUP>TM</SUP>)<BR>
+      まあ、それはウソですが、こうしておけばブラックリストを他人に覗かれることはないという利点はあります。<BR>
+      では、ブラックリスト部分を覗いてみましょう。
+      <CENTER>
+      <TABLE border="1" cellpadding="2" cellspacing="0">
+        <TBODY>
+          <TR>
+            <TD><B><FONT size="+2">@denyhost = (</FONT><BR>
+            <FONT size="+2">
+            '.ed.jp',</FONT><BR>
+            <FONT size="+2">
+            '.go.jp',</FONT><BR>
+            <FONT size="+2">
+            '.edu',</FONT><BR>
+            <FONT size="+2">
+            );</FONT></B></TD>
+          </TR>
+        </TBODY>
+      </TABLE>
+      </CENTER>
+      この様になっていますよね。<BR>
+      この例では　ed.jp(教育機関)、go.jp(政府機関)、.edu(米国教育機関)　を禁止しています。<BR>
+      ドメイン名を　'　で囲み、　,　(コロン)で区切ります。<BR>
+      例えば3Webからのアクセスを禁止したい場合、　'.3web.ne.jp',　を１行追加します。<BR>
+      <BR>
+      <B><U><FONT size="+1">
+      その他表記例</FONT></U></B><BR>
+      <CENTER>
+      <TABLE border="1" cellpadding="2" cellspacing="0">
+        <TBODY>
+          <TR>
+            <TD>'namco',</TD>
+            <TD>ドメイン名に namco を含む来訪者のアクセスを全て禁止します。<BR>
+            大体、namco.co.jp(ナムコ株式会社)くらいしかないとは思いますけど(笑)</TD>
+          </TR>
+          <TR>
+            <TD>'proxy',</TD>
+            <TD><B>proxy</B>.xxx.com<BR>
+            www.<B>proxy</B>.ne.jp<BR>
+            など、ドメイン名に proxy を含むアドレスを禁止します。</TD>
+          </TR>
+        </TBODY>
+      </TABLE>
+      </CENTER><BR>
+      その他、IPアドレスでも指定できますが、判定が完璧ではないので４桁全て使わないと確実ではありません。<BR>
+      例えば、 205.188 と指定すればそのドメイン全てをシャットアウトできますが、176.<B>205.188</B>.2 等の全く関係ない方でも禁止されちゃったりします。<BR>
+      また、この場合、ホスト名をDNSで引けないホスト、つまりIPアドレスモロだしでアクセスしてくる人(ほとんどは匿名proxy)にしか効果がありません。</TD>
+    </TR>
+  </TBODY>
+</TABLE>
+</CENTER>
+
+<BR>
+
+<CENTER>
+<TABLE width="95%" cellpadding="4" cellspacing="4">
+  <TBODY>
+    <TR>
+      <TD bgcolor="#ffc6c7">
+      <P><A name="sengen"><B><FONT size="+1">■宣言</FONT></B></A></P>
+      </TD>
+    </TR>
+    <TR>
+      <TD bgcolor="#ffdfe0">このプログラムはフリーソフトです。<BR>
+      自由に改造して使用して下さい。 配布も自由です。
+      改造したものを再配布する事も制限しません。<BR>
+      <BR>
+      但し、このプログラムの使用・頒布に関して必要以上の金銭授受を伴う場合はそれを禁止します。<BR>
+      (ホームページ制作代行業の方などはご注意下さい。)<BR>
+      <BR>
+      著作権は放棄しません。 プログラム中のコピーライト表記を削除したり、改変しないで下さい。<BR>
+      が、あなたがこのプログラムに大幅な改造を施した場合はその限りではありません。<BR>
+      その辺は常識的なさじ加減ということで…(^_^；<BR>
+      <BR>
+      このプログラムを用いた事による一切の損害について、作者及びサーバ責任者は責任を負わないものとします。<BR>
+      あなたの責任の範囲において使用して下さい。
+      
+      </TD>
+    </TR>
+  </TBODY>
+</TABLE>
+</CENTER>
+
+<BR>
+
+<CENTER>
+<TABLE width="95%" cellpadding="4" cellspacing="4">
+  <TBODY>
+    <TR>
+      <TD bgcolor="#ffc6c7">
+      <P><B><FONT size="+1"><A name="onegai">■お願い</A></FONT></B></P>
+      </TD>
+    </TR>
+    <TR>
+      <TD bgcolor="#ffdfe0">このプログラムを使って下さった方は、極力「有限工房」へリンクを張っていただきたく思います。<BR>
+      普及のためにご協力下さい。　もちろん、強制ではありません。</TD>
+    </TR>
+  </TBODY>
+</TABLE>
+</CENTER>
+<HR>
+<DIV align="right">&copy;1999-2000 不可思議絵の具<BR>
+(<A href="http://www.skipup.com/~fuka/">http://www.skipup.com/~fuka/</A>)</DIV>
+</BODY>
+</HTML>
+
